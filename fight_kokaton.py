@@ -48,7 +48,7 @@ class Bird:
         (0, +5): pg.transform.rotozoom(img, -90, 0.9),  # 下
         (+5, +5): pg.transform.rotozoom(img, -45, 0.9),  # 右下
     }
-
+#指摘ミス→L195
     def __init__(self, xy: tuple[int, int]):
         """
         こうかとん画像Surfaceを生成する
@@ -192,6 +192,7 @@ class Explosion:
             img = self.imgs[self.life % 2]
             screen.blit(img, self.rct)
             self.life -= 1
+
 
 def main():
     pg.display.set_caption("たたかえ！こうかとん")
